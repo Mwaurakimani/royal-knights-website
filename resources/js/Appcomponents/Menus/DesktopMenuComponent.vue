@@ -7,7 +7,7 @@
         <div class="buttons-area">
             <ul class="button-section">
                 <Link as="li" :href="'/'" :class="[activeLink == 1 ? 'active' : '']">Home</Link>
-                <Link as="li" :href="'/ourWork'" :class="[activeLink == 2 ? 'active' : '']"   >Our Programs</Link>
+                <Link as="li" :href="'/ourWork'" :class="[activeLink == 2 ? 'active' : '']"   >Our Work</Link>
                 <Link as="li" :href="'/AboutUs'" :class="[activeLink == 3 ? 'active' : '']" >About</Link>
                 <Link as="li" :href="'/Gallery'" :class="[activeLink == 4 ? 'active' : '']" >Gallery</Link>
             </ul>
