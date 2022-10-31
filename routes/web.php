@@ -15,14 +15,7 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
-});
+
 
 Route::middleware([
     'auth:sanctum',
@@ -32,4 +25,34 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return Inertia::render('Dashboard');
     })->name('dashboard');
+});
+
+Route::get('/ourWork',function (){
+        return Inertia::render('WebPages/ourWork', [
+    ]);
+});
+
+Route::get('/AboutUs',function (){
+        return Inertia::render('WebPages/aboutUs', [
+    ]);
+});
+
+Route::get('/Gallery',function (){
+        return Inertia::render('WebPages/Gallery', [
+    ]);
+});
+
+Route::get('/Connect',function (){
+    return Inertia::render('WebPages/connect', [
+    ]);
+});
+
+
+Route::get('/', function () {
+    return Inertia::render('Welcome', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
 });

@@ -1,0 +1,60 @@
+$primary-color: purple;
+
+nav {
+    width: 100%;
+    height: fit-content;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    box-shadow: 0 0 6px grey;
+}
+
+div {
+    .heading {
+        h4 {
+            line-height: 40px;
+            height: 30px;
+            color: $primary-color;
+            font-weight: bolder;
+        }
+
+        h3 {
+            line-height: 60px;
+            height: 60px;
+            font-size: 1.6em;
+            color: dimgrey;
+            font-weight: bolder;
+        }
+    }
+}
+
+.button-link {
+    padding: 10px 10px;
+    background-color: $primary-color;
+    color: white;
+    border-radius: 8px;
+}
+
+footer {
+    width: 100%;
+    height: fit-content;
+    background-color: #383838;
+
+    .copy-right {
+        text-align: center;
+        background-color: black;
+        color: grey;
+    }
+}
+
+@media screen and (min-width: 918px) {
+    .mobile-nav {
+        display: none;
+    }
+    .desktop-nav {
+        display: block;
+        width: 100%;
+        height: 80px;
+        background-color: white;
+    }
+}
