@@ -1,0 +1,109 @@
+@use "../resources/scss/index";
+.banner-background{
+    width: 100%;
+    display: flex;
+    padding-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: red;
+    h1{
+        font-weight: bolder;
+        font-size: 1.8em;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .contact-det{
+        font-size: 1.2em;
+        margin-bottom: 30px;
+        section{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .icon-holder{
+                margin-right: 10px;
+                width: 20px;
+                height: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            label{
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.contact-form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    & > div{
+        margin: 0px;
+    }
+
+    .user-details{
+        input{
+            display: block;
+            margin: auto;
+            width: 100%;
+            margin-bottom: 10px;
+            border-radius: 3px;
+        }
+    }
+    .text-area{
+        textarea{
+            width: 100%;
+            height: 300px;
+            border-radius: 3px;
+        }
+    }
+    .button-section{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    .contact-form{
+        width: 800px;
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        .user-details{
+            height: 200px;
+            width: 350px;
+            input{
+                display: block;
+                width: 100%;
+                margin: auto auto 30px;
+                border-radius: 3px;
+            }
+        }
+        .text-area{
+            height: 200px;
+            width: 350px;
+            textarea{
+                width: 100%;
+                height: 100%;
+                border-radius: 3px;
+            }
+        }
+        .button-section{
+            width: 100%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
