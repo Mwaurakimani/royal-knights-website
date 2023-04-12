@@ -1,19 +1,19 @@
 <template>
-  <li>
-    <h5 class="heading">Program</h5>
-    <div class="image-section">
+    <li style="max-width: 900px" >
+        <h5 class="heading">{{ program.heading }}</h5>
+        <div class="image-section">
 
-    </div>
-    <div class="description-section" style="font-size: 0.9em">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      Culpa deleniti eum excepturi fugiat hic id ipsam obcaecati
-    </div>
-    <a href="">Learn More...</a>
-  </li>
+        </div>
+        <div class="description-section" style="font-size: 0.9em;overflow: hidden;text-overflow: ellipsis">
+            {{program.details}}
+        </div>
+        <a href="">Learn More...</a>
+    </li>
 </template>
 <script>
 export default {
-  name: 'program-lineup-component'
+    name: 'program-lineup-component',
+    props: ['program']
 }
 </script>
 <style lang="scss" scoped>

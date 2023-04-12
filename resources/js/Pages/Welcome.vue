@@ -3,9 +3,7 @@
         <div class="mobile-banner">
             <div class="information-section">
                 <h1>Royal Knights <br> Organization</h1>
-                <p>
-                    hii
-                </p>
+                <p> As Royal Knights, we are dedicated to serving our communities in any way we can through volunteer programs, community service initiatives, and outreach efforts.</p>
             </div>
         </div>
 
@@ -18,7 +16,11 @@
 
             </div>
             <div class="knowledge-section">
-                <p>the quick brown fox jummped over the lazy dogs</p>
+                <p>Welcome to Royal Knights Organization, where community is at the heart of everything we do. Our goal is simple: to create a world where everyone can thrive. We believe that by working together and supporting one another, we can make a positive impact on the world around us.
+
+                    As Royal Knights, we are dedicated to serving our communities in any way we can. Through volunteer programs, community service initiatives, and outreach efforts, we strive to make a difference in the lives of those around us.
+
+                    Join us on our mission to build a brighter future for all. Together, as Royal Knights, we can make a world of difference.</p>
                 <a href="" class="button-link">Get Involved</a>
             </div>
         </div>
@@ -29,17 +31,14 @@
                 <h3>Programs</h3>
             </div>
             <div class="knowledge-section" style="margin-bottom:20px">
-                <p style="border-bottom: 1px solid purple;padding-bottom: 20px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, aspernatur debitis dolor error
-                    facilis ipsa omnis quidem recusandae. Accusantium, iusto, sit! Accusamus aliquam eius eveniet illum modi
-                    nesciunt nulla sint?
+                <p style="border-bottom: 1px solid purple;padding-bottom: 20px">
+                    We strive to empower and inspire the next generation of leaders. Our programs are designed to support youth in their personal and spiritual growth, while also providing practical guidance for academic and career success.
+                    <br>
+                    Over the years, we have reached out to hundreds of schools and churches, impacting the lives of thousands of young people. Our programs are created with the goal of guiding youth in their journey towards becoming responsible, compassionate, and successful members of society.We aim to create a cohesive and supportive environment that fosters growth and development.
                 </p>
             </div>
             <ul class="program-lineup">
-                <program-lineup-component/>
-                <program-lineup-component/>
-                <program-lineup-component/>
-                <program-lineup-component/>
-                <program-lineup-component/>
+                <program-lineup-component v-for="program in programs" :program="program" />
             </ul>
         </div>
 
@@ -51,7 +50,7 @@
                 <div class="program-tab"></div>
                 <div class="program-tab"></div>
             </div>
-            <p style="max-width: 800px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur delectus doloremque ducimus esse expedita ipsa itaque maxime molestias natus numquam obcaecati odio officia optio perferendis porro quas rerum, veniam?</p>
+            <p style="max-width: 800px" class="mb-[20px]">The Royal Knights Organisation has had a tremendous impact on the community over the years.Our organization's commitment to making a difference in the lives of young people has been unwavering, and we remain dedicated to continuing our work for many years to come. </p>
         </div>
 
         <div class="events-section sub-section">
@@ -109,6 +108,32 @@ export default {
     components: {
         websiteLayout,
         ProgramLineupComponent,
+    },
+
+    data(){
+        return{
+            programs:[
+                {
+                    heading:"School Missionary Programs",
+                    details:'At Royal Knights Organization, we are passionate about spreading the love and grace of God to those around us. Our school and missionary programs are designed to provide individuals of all ages and backgrounds with the opportunity to connect with positive role models, learn valuable life skills, and deepen their spiritual connections.'
+                },
+                {
+                    heading:"Boys to men",
+                    details:"Welcome to the Boys to Men program, a Royal Knights Organization initiative designed to help young boys aged 13-16 develop into successful and compassionate leaders. Our program focuses on teaching practical skills such as effective communication, decision-making, problem-solving, goal-setting, and teamwork, while also providing guidance on living a Godly life. Through our mentoring sessions, we are committed to helping boys grow in a Godly manner and become the best versions of themselves.\n" +
+                        "\n" +
+                        "At the Boys to Men program, we believe that every boy has the potential to become a leader. That's why we are dedicated to empowering boys with the skills and values they need to succeed in all areas of life, including school, work, and beyond. "
+                },
+                {
+                    heading:"Preaching",
+                    details:"Join us for an uplifting and inspiring experience as we bring the Word of God to churches across the country. At Royal Knights Organization, our preaching program is designed to provide Christians with the spiritual guidance they need to strengthen their faith and deepen their connection with God. Our passionate and knowledgeable preachers are committed to delivering powerful messages that speak directly to the hearts"
+                },
+                {
+                    heading:"Academic and career guidance",
+                    details:"At Royal Knights, we understand the importance of helping our youth navigate the journey from academic studies to career paths. We believe that every young person has unique gifts and talents that can be nurtured to reach their full potential. As a Christian organization, we are committed to providing guidance and support to help our youth make informed decisions about their future.Our team members are passionate about helping young people discover their passions, explore career options, and develop the skills necessary to achieve their goals."
+                },
+
+            ]
+        }
     },
     methods: {
 
