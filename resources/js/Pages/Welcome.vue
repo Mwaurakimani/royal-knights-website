@@ -1,13 +1,13 @@
 <template>
     <website-layout :activeLink="1">
-        <div class="mobile-banner">
-            <div class="information-section">
-                <h1>Royal Knights <br> Organization</h1>
-                <p>
-                    hii
-                </p>
-            </div>
-        </div>
+<!--        <div class="mobile-banner">-->
+<!--            <div class="information-section">-->
+<!--                <h1>Royal Knights <br> Organization</h1>-->
+<!--                <p>-->
+<!--                    hii-->
+<!--                </p>-->
+<!--            </div>-->
+<!--        </div>-->
 
         <div class="who-we-are max-w-screen-l sub-section">
             <div class="heading">
