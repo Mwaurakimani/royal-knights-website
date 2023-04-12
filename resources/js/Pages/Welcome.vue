@@ -3,9 +3,7 @@
         <div class="mobile-banner">
             <div class="information-section">
                 <h1>Royal Knights <br> Organization</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, aspernatur debitis dolor error
-                    facilis ipsa omnis quidem recusandae. Accusantium, iusto, sit! Accusamus aliquam eius eveniet illum modi
-                    nesciunt nulla sint?
+                <p>
                 </p>
             </div>
         </div>
@@ -19,10 +17,7 @@
 
             </div>
             <div class="knowledge-section">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, aspernatur debitis dolor error
-                    facilis ipsa omnis quidem recusandae. Accusantium, iusto, sit! Accusamus aliquam eius eveniet illum modi
-                    nesciunt nulla sint?
-                </p>
+                <p>the quick brown fox jummped over the lazy dogs</p>
                 <a href="" class="button-link">Get Involved</a>
             </div>
         </div>
