@@ -4,7 +4,7 @@
             <div class="information-section">
                 <h1>Royal Knights <br> Organization</h1>
                 <p>
-                    hi
+                    hii
                 </p>
             </div>
         </div>
