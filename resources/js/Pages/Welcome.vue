@@ -123,13 +123,13 @@ export default {
             programs: [
                 {
                     link: "/ourWork/SchoolMissionary",
-                    imageLink: '/storage/frontEnd/images/MAinPageImages/school_missionary_programs.jpg',
+                    imageLink: '/storage/frontEnd/images/MainPageImages/school_missionary_programs.jpg',
                     heading: "School Missionary Programs",
                     details: 'At Royal Knights Organization, we are passionate about spreading the love and grace of God to those around us. Our school and missionary programs are designed to provide individuals of all ages and backgrounds with the opportunity to connect with positive role models, learn valuable life skills, and deepen their spiritual connections.'
                 },
                 {
                     link: "/ourWork/BoystoMen",
-                    imageLink: '/storage/frontEnd/images/MAinPageImages/noys_to_men.jpg',
+                    imageLink: '/storage/frontEnd/images/MainPageImages/noys_to_men.jpg',
                     heading: "Boys to men",
                     details: "Welcome to the Boys to Men program, a Royal Knights Organization initiative designed to help young boys aged 13-16 develop into successful and compassionate leaders. Our program focuses on teaching practical skills such as effective communication, decision-making, problem-solving, goal-setting, and teamwork, while also providing guidance on living a Godly life. Through our mentoring sessions, we are committed to helping boys grow in a Godly manner and become the best versions of themselves.\n" +
                         "\n" +
@@ -137,13 +137,13 @@ export default {
                 },
                 {
                     link: "/ourWork/preaching",
-                    imageLink: '/storage/frontEnd/images/MAinPageImages/preaching.jpg',
+                    imageLink: '/storage/frontEnd/images/MainPageImages/preaching.jpg',
                     heading: "Preaching",
                     details: "Join us for an uplifting and inspiring experience as we bring the Word of God to churches across the country. At Royal Knights Organization, our preaching program is designed to provide Christians with the spiritual guidance they need to strengthen their faith and deepen their connection with God. Our passionate and knowledgeable preachers are committed to delivering powerful messages that speak directly to the hearts"
                 },
                 {
                     link: "/ourWork/guidance",
-                    imageLink: '/storage/frontEnd/images/MAinPageImages/guidance.jpg',
+                    imageLink: '/storage/frontEnd/images/MainPageImages/guidance.jpg',
                     heading: "Academic and career guidance",
                     details: "At Royal Knights, we understand the importance of helping our youth navigate the journey from academic studies to career paths. We believe that every young person has unique gifts and talents that can be nurtured to reach their full potential. As a Christian organization, we are committed to providing guidance and support to help our youth make informed decisions about their future.Our team members are passionate about helping young people discover their passions, explore career options, and develop the skills necessary to achieve their goals."
                 },

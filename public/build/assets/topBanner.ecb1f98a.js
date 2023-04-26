@@ -1,0 +1,1 @@
+import{_ as a}from"./_plugin-vue_export-helper.cdc0426e.js";import{o as t,e as o,a as n,t as s}from"./app.4dc9a70a.js";const _={name:"topBanner",props:["pageName"]},c={class:"page-banner"},r={class:"container"};function p(d,i,e,m,l,f){return t(),o("div",c,[n("h1",r,s(e.pageName),1)])}const u=a(_,[["render",p],["__scopeId","data-v-8e0b586d"]]);export{u as t};
