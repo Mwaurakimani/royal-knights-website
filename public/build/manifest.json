@@ -507,17 +507,13 @@
       "assets/Welcome.2bd1ae83.css"
     ]
   },
-  "topBanner.css": {
-    "file": "assets/topBanner.343c8dc3.css",
-    "src": "topBanner.css"
+  "resources/js/app.css": {
+    "file": "assets/app.deca0839.css",
+    "src": "resources/js/app.css"
   },
   "resources/js/Pages/WebPages/Event.css": {
     "file": "assets/Event.cc83fe3b.css",
     "src": "resources/js/Pages/WebPages/Event.css"
-  },
-  "resources/js/Pages/Welcome.css": {
-    "file": "assets/Welcome.2bd1ae83.css",
-    "src": "resources/js/Pages/Welcome.css"
   },
   "resources/js/Pages/WebPages/ourWork.css": {
     "file": "assets/ourWork.b7c7eedc.css",
@@ -527,20 +523,24 @@
     "file": "assets/Gallery.0d2a4830.css",
     "src": "resources/js/Pages/WebPages/Gallery.css"
   },
+  "resources/js/Pages/WebPages/aboutUs.css": {
+    "file": "assets/aboutUs.684b2097.css",
+    "src": "resources/js/Pages/WebPages/aboutUs.css"
+  },
   "websiteLayout.css": {
     "file": "assets/websiteLayout.26edc1dc.css",
     "src": "websiteLayout.css"
   },
-  "resources/js/app.css": {
-    "file": "assets/app.deca0839.css",
-    "src": "resources/js/app.css"
+  "topBanner.css": {
+    "file": "assets/topBanner.343c8dc3.css",
+    "src": "topBanner.css"
   },
   "resources/js/Pages/WebPages/connect.css": {
     "file": "assets/connect.eea629da.css",
     "src": "resources/js/Pages/WebPages/connect.css"
   },
-  "resources/js/Pages/WebPages/aboutUs.css": {
-    "file": "assets/aboutUs.684b2097.css",
-    "src": "resources/js/Pages/WebPages/aboutUs.css"
+  "resources/js/Pages/Welcome.css": {
+    "file": "assets/Welcome.2bd1ae83.css",
+    "src": "resources/js/Pages/Welcome.css"
   }
 }
