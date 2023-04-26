@@ -1,6 +1,0 @@
-/node_modules
-/public/hot
-.env
-.env.backup
-/.idea
-/.vscode
