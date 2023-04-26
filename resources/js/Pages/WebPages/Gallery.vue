@@ -2,31 +2,9 @@
     <website-layout :activeLink="4">
         <top-banner :pageName="pageName"></top-banner>
         <div class="gallery-display">
-            <div class="image-section">
-
+            <div v-for="image in images"  class="image-section">
+                <img :src="'/storage/frontEnd/images/'+image">
             </div>
-            <div class="image-section">
-
-            </div>
-            <div class="image-section">
-
-            </div>
-            <div class="image-section">
-
-            </div>
-            <div class="image-section">
-
-            </div>
-            <div class="image-section">
-
-            </div>
-            <div class="image-section">
-
-            </div>
-            <div class="image-section">
-
-            </div>
-
         </div>
     </website-layout>
 </template>
@@ -38,6 +16,7 @@ import topBanner from "../../Appcomponents/topBanner.vue";
 
 export default {
     name: "ourWork.vue",
+    props:['images'],
     data(){
         return {
             pageName:"Gallery"
@@ -56,7 +35,6 @@ export default {
 
 .gallery-display{
     width: 90%;
-    background-color: red;
     margin: auto auto 100px;
     padding: 10px;
     display: flex;
@@ -65,10 +43,25 @@ export default {
     flex-wrap: wrap;
 
     .image-section{
+        cursor: pointer;
         margin: auto;
         width: 200px;
-        height: 250px;
-        background-color: cyan;
+        height: 200px;
+        padding: 5px;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 0 6px lightgrey;
+        transition: all ease-in 100ms;
+        img{
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        &:hover{
+            transform: scale(1.1);
+        }
     }
 }
 

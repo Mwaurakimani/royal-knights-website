@@ -63,8 +63,13 @@ export default {
 @use "../resources/scss/index";
 
 .mobile-nav {
+    z-index:5000;
     width: 100%;
     height: fit-content;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+
 
     .top-bar {
         width: 100%;

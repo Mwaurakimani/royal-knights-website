@@ -35,6 +35,7 @@ export default {
 nav {
     width: 100%;
     height: fit-content;
+    z-index:5000;
 }
 
 .desktop-nav {

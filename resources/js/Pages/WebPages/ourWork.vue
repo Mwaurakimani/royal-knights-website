@@ -1,67 +1,15 @@
 <template>
     <website-layout :activeLink="2">
-        <top-banner :pageName="pageName"></top-banner>
-        <p class="px-[20px] max-w-screen-xl mx-auto mb-[30px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-            molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-            numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-            optio, eaque rerum! Provident similique accusantium nemo autem.
-        </p>
+        <top-banner :pageName="content.title"></top-banner>
+        <p class="px-[20px] max-w-screen-xl mx-auto mb-[30px]">{{  content.description }}</p>
 
-        <div class="content-item-section max-w-screen-xl p-[20px] mx-auto">
-            <div class="image-section">
-
+        <div v-for="(item,index) in content.sub_content" class="content-item-section max-w-screen-xl p-[20px] mx-auto" :class="[index%2 === 0 && item.image && item.description ? 'flex-row-reverse': '']">
+            <div v-if="item.image" class="image-section">
+                <img  style="object-position: center;object-fit: cover;width: 100%; height: 100%" :src="item.image" alt="">
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                optio, eaque rerum! Provident similique accusantium nemo autem.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                optio, eaque rerum! Provident similique accusantium nemo autem.</p>
+            <p v-if="item.description">{{ item.description }}</p>
         </div>
 
-        <div class="content-item-section max-w-screen-xl p-[20px] mx-auto flex-row-reverse">
-            <div class="image-section">
-
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                optio, eaque rerum! Provident similique accusantium nemo autem.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                optio, eaque rerum! Provident similique accusantium nemo autem.</p>
-        </div>
-
-        <div class="content-item-section max-w-screen-xl p-[20px] mx-auto">
-            <div class="image-section">
-
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                optio, eaque rerum! Provident similique accusantium nemo autem.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                optio, eaque rerum! Provident similique accusantium nemo autem.</p>
-        </div>
-
-        <div class="content-item-section max-w-screen-xl p-[20px] mx-auto flex-row-reverse">
-            <div class="image-section">
-
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                optio, eaque rerum! Provident similique accusantium nemo autem.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                optio, eaque rerum! Provident similique accusantium nemo autem.</p>
-        </div>
     </website-layout>
 </template>
 
@@ -71,6 +19,7 @@ import topBanner from "../../Appcomponents/topBanner.vue";
 
 export default {
     name: "ourWork.vue",
+    props:['content'],
     data(){
         return {
             pageName:"Our Programs"
@@ -88,6 +37,7 @@ export default {
 
 
 .content-item-section{
+    max-width: 1000px;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -96,7 +46,6 @@ export default {
         align-self: flex-start;
         width: 100%;
         height: 300px;
-        background-color: cyan;
         margin-bottom: 10px;
     }
 }
@@ -111,7 +60,9 @@ export default {
         padding-right: 80px;
         flex-wrap: nowrap;
         .image-section{
-            width: 300px;
+            max-width: 300px;
+            max-height: 300px;
+            padding: 10px;
             margin-left: 10px;
             margin-right: 10px;
         }

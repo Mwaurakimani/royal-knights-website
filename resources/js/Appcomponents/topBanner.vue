@@ -1,6 +1,6 @@
 <template>
     <div class="page-banner">
-        <h1>{{ pageName }}</h1>
+        <h1 class="container">{{ pageName }}</h1>
     </div>
 </template>
 
@@ -12,6 +12,12 @@ export default {
 </script>
 
 <style lang="scss"  scoped>
+h1{
+    max-width: 1240px;
+    padding: 0px;
+    margin: 0px;
+    margin: auto;
+}
 
 .page-banner{
     width: 100%;
