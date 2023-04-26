@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="WebsiteDevelopment" pattern="!file[royal-knights-website]:tests/*&amp;&amp;!file[royal-knights-website]:tests//*" />
+</component>
